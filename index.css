@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.content {
+  margin: 40px 20px;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  color: hsl(0, 0%, 95%);
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.sedans,
+.suvs,
+.luxury {
+  background-color: hsl(31, 77%, 52%);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  padding: 40px;
+}
+
+.btn {
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.sedans .btn,
+.suvs .btn,
+.luxury .btn {
+  padding: 10px 32px;
+  border: 2px solid white;
+}
+
+.sedans .btn {
+  color: hsl(31, 77%, 52%);
+}
+
+.sedans .btn:hover {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.suvs .btn {
+  color: hsl(184, 100%, 22%);
+}
+
+.suvs .btn:hover {
+  background-color: hsl(184, 100%, 22%);
+
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.luxury .btn {
+  color: hsl(179, 100%, 13%);
+}
+
+.luxury .btn:hover {
+  background-color: hsl(179, 100%, 13%);
+
+}
+
+.sedans .btn:hover,
+.suvs .btn:hover,
+.luxury .btn:hover {
+  cursor: pointer;
+  color: hsla(0, 0%, 100%, 0.75);
+  transition: all ease-in-out 0.3s;
+
+}
+
+@media (min-width: 992px) {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    height: 100vh;
+  }
+
+
+}
